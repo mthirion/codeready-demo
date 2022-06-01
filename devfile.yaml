@@ -1,0 +1,18 @@
+apiVersion: 1.0.0
+metadata:
+  name: myapp-by-factory
+projects:
+  - name: myapp-by-factory
+    source:
+      location: 'https://github.com/mthirion/quarkus-demo-app-public.git'
+      startPoint: main
+      type: git
+components:
+  - id: redhat/vscode-xml/latest
+    type: chePlugin
+  - id: redhat/vscode-openshift-connector/latest
+    type: chePlugin
+  - id: redhat/java11/latest
+    type: chePlugin
+  - id: redhat/quarkus-java11/latest
+    type: chePlugin
